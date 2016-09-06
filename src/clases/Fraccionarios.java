@@ -45,4 +45,14 @@ public class Fraccionarios {
         f= new Fraccionarios(num,den);
         return f;
     }
+     public Fraccionarios resta(Fraccionarios f2){
+    Fraccionarios f;
+    int num,den;
+    
+    num = this.numerador * f2.denominador - this.denominador * f2.numerador;
+        den = this.denominador * f2.denominador;
+        
+        f= new Fraccionarios(num,den);
+        return f;
+}
 }
